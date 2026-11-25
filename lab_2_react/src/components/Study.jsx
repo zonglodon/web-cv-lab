@@ -12,7 +12,7 @@ export default function Study({ data }) {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr className="bg-white">
+                    <tr className="bg-white dark:bg-slate-800">
                         <td className="p-3">{data.school}</td>
                         <td className="p-3">{data.department}</td>
                         <td className="p-3">{data.group}</td>
