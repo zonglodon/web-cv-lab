@@ -10,10 +10,10 @@ import Footer from './components/Footer';
 
 export default function App() {
     return (
-        <>
+        <div className="min-h-screen bg-white text-slate-800">
             <Hero person={person} />
             <Menu items={menu} />
-            <main>
+            <main className="mx-auto max-w-4xl divide-y divide-slate-200 px-6">
                 <Profile />
                 <Stack data={stack} />
                 <Works data={works} />
@@ -21,6 +21,6 @@ export default function App() {
                 <Links data={links} />
             </main>
             <Footer name={person.name} />
-        </>
+        </div>
     );
 }
