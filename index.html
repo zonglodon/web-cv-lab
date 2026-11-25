@@ -4,23 +4,31 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CV | Білий Н. В.</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        header em { color: #c9c2b6; }
+    </style>
 </head>
 <body>
 
-<header>
-    <h1>Білий Н. В.</h1>
-    <p><em>студент, група КБ-405</em></p>
-</header>
+<div class="sidebar">
+    <div class="sidebar__inner">
+        <header>
+            <h1>Білий Н. В.</h1>
+            <p><em>студент, група КБ-405</em></p>
+        </header>
 
-<nav>
-    <a href="#profile">Профіль</a> |
-    <a href="#stack">Технології</a> |
-    <a href="#works">Роботи</a> |
-    <a href="#study">Навчання</a> |
-    <a href="#links">Посилання</a>
-</nav>
+        <nav class="menu">
+            <a href="#profile">Профіль</a>
+            <a href="#stack">Технології</a>
+            <a href="#works">Роботи</a>
+            <a href="#study">Навчання</a>
+            <a href="#links">Посилання</a>
+        </nav>
+    </div>
+</div>
 
-<main>
+<main class="content">
     <section id="profile">
         <h2>Профіль</h2>
         <p>
@@ -47,16 +55,16 @@
     <section id="works">
         <h2>Роботи</h2>
         <p>Усі роботи виконані під час навчання.</p>
-        <ol>
-            <li>
+        <ol class="works">
+            <li class="works__item">
                 <h3>Сторінка CV</h3>
                 <p>Статична сторінка на HTML і CSS, яку ви зараз переглядаєте.</p>
             </li>
-            <li>
+            <li class="works__item">
                 <h3>CV у вигляді React-застосунку</h3>
                 <p>Та сама сторінка, але зібрана з компонентів. Дані лежать окремо від розмітки.</p>
             </li>
-            <li>
+            <li class="works__item">
                 <h3>Сервер для форми</h3>
                 <p>Express-застосунок, що роздає сайт і записує звернення у файл.</p>
             </li>
@@ -93,7 +101,7 @@
 </main>
 
 <footer>
-    <small>Білий Н. В., 2026</small>
+    <small style="letter-spacing: 1px;">Білий Н. В., 2026</small>
 </footer>
 
 </body>
