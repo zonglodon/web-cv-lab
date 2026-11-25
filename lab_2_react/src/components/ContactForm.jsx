@@ -16,7 +16,7 @@ export default function ContactForm() {
     return (
         <div className="fixed inset-0 z-20 grid place-items-center overflow-auto bg-slate-900/70 p-4">
             <form
-                action="https://formspree.io/f/FORM_ID"
+                action="https://formspree.io/f/mgakdpze"
                 method="POST"
                 className="w-full max-w-sm space-y-4 rounded-3xl bg-white p-8 dark:bg-slate-800"
             >
