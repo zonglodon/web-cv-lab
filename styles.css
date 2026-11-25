@@ -14,6 +14,19 @@
     box-sizing: border-box;
 }
 
+[data-theme="night"] {
+    --bg: #17181b;
+    --panel: #0e0f11;
+    --text: #dcd7cf;
+    --muted: #9a948a;
+    --card: #222428;
+    --line: #37393e;
+}
+
+[hidden] {
+    display: none !important;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -176,6 +189,109 @@ footer {
     text-align: center;
     color: #f3efe8;
     background: var(--panel);
+}
+
+footer table {
+    max-width: 760px;
+    margin: 12px auto 0;
+    font-size: 13px;
+    color: var(--text);
+    overflow-wrap: anywhere;
+}
+
+#storage td:first-child {
+    white-space: nowrap;
+}
+
+summary {
+    cursor: pointer;
+}
+
+/* перемикач теми */
+.switch {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 24px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border: 1px solid #55575c;
+}
+
+.switch input {
+    accent-color: var(--accent);
+}
+
+/* відгуки */
+.review {
+    margin: 0 0 18px;
+}
+
+.review blockquote {
+    margin: 0;
+}
+
+.review figcaption {
+    margin-top: 6px;
+    font-size: 14px;
+    color: var(--muted);
+    overflow-wrap: anywhere;
+}
+
+/* вікно з формою */
+.overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px 16px;
+    overflow: auto;
+    background: rgba(20, 20, 20, 0.6);
+}
+
+.overlay__form {
+    position: relative;
+    width: 100%;
+    max-width: 460px;
+    padding: 28px;
+    border-top: 6px solid var(--accent);
+    background: var(--card);
+}
+
+.overlay__form p {
+    margin: 0 0 14px;
+}
+
+.overlay__form input,
+.overlay__form textarea {
+    width: 100%;
+    padding: 9px;
+    font: inherit;
+    color: inherit;
+    background: var(--bg);
+    border: 1px solid var(--line);
+}
+
+.overlay__form button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font: inherit;
+    color: #ffffff;
+    background: var(--accent);
+    border: none;
+    cursor: pointer;
+}
+
+.overlay__close {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    font-size: 28px;
+    color: var(--muted);
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 @media (max-width: 760px) {

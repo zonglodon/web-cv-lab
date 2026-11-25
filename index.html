@@ -25,6 +25,11 @@
             <a href="#study">Навчання</a>
             <a href="#links">Посилання</a>
         </nav>
+
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle">
+            <span>Нічна тема</span>
+        </label>
     </div>
 </div>
 
@@ -98,11 +103,47 @@
             <li><a href="https://developer.mozilla.org" target="_blank" rel="noopener">Документація MDN</a></li>
         </ul>
     </section>
+
+    <section id="reviews">
+        <h2>Відгуки роботодавців</h2>
+        <p><small>Вигадані дані з сервісу JSONPlaceholder.</small></p>
+        <div id="reviews-list"></div>
+    </section>
 </main>
 
 <footer>
     <small style="letter-spacing: 1px;">Білий Н. В., 2026</small>
+    <details open>
+        <summary>Вміст localStorage</summary>
+        <table id="storage"></table>
+    </details>
 </footer>
+
+<div class="overlay" hidden>
+    <form class="overlay__form" action="https://formspree.io/f/FORM_ID" method="post">
+        <button class="overlay__close" type="button" aria-label="Закрити">&times;</button>
+        <h2>Напишіть мені</h2>
+        <p>
+            <label for="f-name">Ім'я</label>
+            <input id="f-name" name="name" autocomplete="name" required>
+        </p>
+        <p>
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
+        </p>
+        <p>
+            <label for="f-phone">Номер телефону</label>
+            <input id="f-phone" name="phone" type="tel" autocomplete="tel">
+        </p>
+        <p>
+            <label for="f-text">Ваше повідомлення</label>
+            <textarea id="f-text" name="message" rows="5" required></textarea>
+        </p>
+        <button type="submit">Надіслати</button>
+    </form>
+</div>
+
+<script src="main.js"></script>
 
 </body>
 </html>
